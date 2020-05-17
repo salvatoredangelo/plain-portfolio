@@ -88,10 +88,10 @@ section:nth-child(even) {
 .top-layer:hover {
     transform: scale(0.9);
     opacity: 1;
-    border: 1rem solid black;
 }
 
-.top-layer, .top-layer:hover {
+.top-layer,
+.top-layer:hover {
     transition: all 0.25s ease-out;
 }
 
@@ -99,7 +99,7 @@ section:nth-child(even) {
     background-image: url('../images/darkommute.png');
 }
 
-.top-layer:nth-child(2){
+.top-layer:nth-child(2) {
     background-image: url('../images/downtrees.jpg');
     filter: invert();
 }
@@ -111,6 +111,7 @@ section:nth-child(even) {
 .top-layer:nth-child(4) {
     background-image: url('../images/eyeGrapefruit.png');
 }
+
 .top-layer div {
     position: absolute;
     bottom: 0;
@@ -146,6 +147,7 @@ section:nth-child(even) {
     position: sticky;
     top: 0;
     height: 2rem;
+    z-index: 100;
 }
 
 body::-webkit-scrollbar {
